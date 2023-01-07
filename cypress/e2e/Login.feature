@@ -4,8 +4,9 @@ Feature: webdriveruniversity - Login page
     Background: Pre-condition
         When I wait for 0 seconds
     Scenario Outline: Validate valid & invalid login credentials
-        Given I navigate to the webdriveruniversity homepage
-        When I click on the login portal button
+        # Given I navigate to the webdriveruniversity homepage
+        # When I click on the login portal button
+        Given I navigate to the webdriveruniversity loginpage
         And I type a username <username>
         And I type a password <password>
         And I click on the login button
